@@ -1,0 +1,16 @@
+extends layout
+
+block contains
+    h1= title  
+    form(action='/login', method='post' style='max-width:300px')
+      div
+        label Username:
+        input.form-control(type='text', name='username')
+      div
+        label Password:
+        input.form-control(type='password', name='password')
+      div
+        input.btn.btn-default(type='submit', value='Log In')
+
+
+ 

@@ -1,0 +1,16 @@
+#wrapper
+	#sidebar-wrapper
+		ul.sidebar-nav
+			li.sidebar-brand
+				a(href='/') home
+			li.sidebar-brand
+				a(href='/login') login
+			li.sidebar-brand
+				a(href='/register') register 
+			if (!username)
+				li
+					a(href="/login") Login 
+					a(href="/register") Register
+			if (username)
+				li logged in as #{username.username}
+					a(href="/logout") Logout 

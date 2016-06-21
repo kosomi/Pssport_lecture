@@ -1,0 +1,10 @@
+extends layout
+
+block contains
+
+
+	if(username)
+		h1 hi #{username.username}. Welcome back!
+
+	if(!username)
+		h1 Welcome to myhome!

@@ -1,0 +1,17 @@
+extends layout
+
+block contains
+    h1= title  
+    form(action='/register', method='post' style='max-width: 300px')
+      div
+        label Username:
+        input.form-control(type='text', name='username')
+      div
+        label Password:
+        input.form-control(type='password', name='password')
+      div
+        button.btn.btn-default(type='submit') Submit
+        a(href='/')
+            button.btn.btn-primary(type="button") Back
+
+
